@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AHMED OKASHA — Backend Developer</title>
+    <meta
+      name="description"
+      content="AHMED OKASHA — 4th Year CS Student & Aspiring Backend Developer."
+    />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Noise Overlay -->
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- Grid Background -->
+    <div class="grid-bg" aria-hidden="true"></div>
+
+    <!-- ══════════ NAVBAR ══════════ -->
+    <header id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-bracket">[</span>ahmed<span class="logo-dot"
+            >.</span
+          >dev<span class="logo-bracket">]</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#about" class="nav-link"
+            ><span class="nav-num">01.</span>About</a
+          >
+          <a href="#skills" class="nav-link"
+            ><span class="nav-num">02.</span>Skills</a
+          >
+          <a href="#projects" class="nav-link"
+            ><span class="nav-num">03.</span>Projects</a
+          >
+          <a href="#contact" class="nav-link"
+            ><span class="nav-num">04.</span>Contact</a
+          >
+        </nav>
+        <a href="mailto:ahmad.okash.990@gmail.com" class="nav-cta">
+          <i class="fa-solid fa-terminal"></i> Hire Me
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" class="mob-link">01. About</a>
+        <a href="#skills" class="mob-link">02. Skills</a>
+        <a href="#projects" class="mob-link">03. Projects</a>
+        <a href="#contact" class="mob-link">04. Contact</a>
+      </div>
+    </header>
+
+    <!-- ══════════ HERO ══════════ -->
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-left">
+          <div class="hero-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for opportunities</span>
+          </div>
+
+          <div class="hero-greeting">
+            <span class="mono-text">// Hi there, I'm</span>
+          </div>
+
+          <h1 class="hero-name">
+            <span class="name-line glitch" data-text="AHMED">AHMED</span>
+            <span class="name-line name-last">OKASHA</span>
+          </h1>
+
+          <div class="hero-role-wrap">
+            <span class="role-arrow">→</span>
+            <span class="hero-role" id="heroRole"></span>
+            <span class="role-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            4th year student at <strong>HICIT</strong> — Higher Institute of
+            Computers, Information &amp; Management Technology. Building
+            real-world systems, one API at a time.
+          </p>
+
+          <div class="hero-tags">
+            <span class="htag"
+              ><i class="fa-brands fa-node-js"></i> Node.js</span
+            >
+            <span class="htag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="htag"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="htag"
+              ><i class="fa-solid fa-server"></i> REST APIs</span
+            >
+            <span class="htag"><i class="fa-brands fa-git-alt"></i> Git</span>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <span>View My Work</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn-ghost">
+              <span>Let's Talk</span>
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a
+              href="https://github.com/hassanelsaid2003"
+              target="_blank"
+              rel="noopener"
+              class="soc-link"
+              title="GitHub"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/hassan-elsaid-bb00b5397"
+              target="_blank"
+              rel="noopener"
+              class="soc-link"
+              title="LinkedIn"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://x.com/EnG_hassan2003"
+              target="_blank"
+              rel="noopener"
+              class="soc-link"
+              title="Twitter/X"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://wa.me/201210378575"
+              target="_blank"
+              rel="noopener"
+              class="soc-link soc-wa"
+              title="WhatsApp"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+            <a href="mailto:za9hl00l@gmail.com" class="soc-link" title="Email"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="photo-frame">
+            <div class="frame-corner fc-tl"></div>
+            <div class="frame-corner fc-tr"></div>
+            <div class="frame-corner fc-bl"></div>
+            <div class="frame-corner fc-br"></div>
+            <img
+              src="./images/okasha.jpg"
+              alt="AHMED OKASHA"
+              class="hero-photo"
+            />
+            <div class="photo-badge badge-1">
+              <i class="fa-solid fa-code"></i> Backend Dev
+            </div>
+            <div class="photo-badge badge-2">
+              <i class="fa-solid fa-graduation-cap"></i> Year 4
+            </div>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-box">
+              <span class="stat-val" data-count="10" data-suffix="+">0+</span>
+              <span class="stat-key">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-box">
+              <span class="stat-val" data-count="4" data-suffix="yr">0yr</span>
+              <span class="stat-key">CS Student</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-box">
+              <span class="stat-val" data-count="3" data-suffix="+">0+</span>
+              <span class="stat-key">Languages</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span class="mono-text">scroll_down();</span>
+        <i class="fa-solid fa-arrow-down scroll-arrow"></i>
+      </div>
+    </section>
+
+    <!-- ══════════ ABOUT ══════════ -->
+    <section id="about">
+      <div class="section-container">
+        <div class="sec-label reveal">
+          <span class="mono-text">// 01.</span> About Me
+        </div>
+        <h2 class="sec-title reveal">
+          WHO AM I<span class="accent-dot">.</span>
+        </h2>
+
+        <div class="about-grid">
+          <div class="about-text reveal" data-delay="100">
+            <p>
+              I'm <strong> ahmed okasha</strong>, a 4th year student at the
+              Higher Institute of Computers, Information &amp; Management
+              Technology — passionate about building the invisible layer that
+              powers everything: the backend.
+            </p>
+            <p>
+              My focus is on designing and developing scalable server-side
+              systems, clean RESTful APIs, and efficient databases. I believe
+              the best software isn't just functional — it's
+              <strong>engineered with intention</strong>.
+            </p>
+            <p>
+              I'm always learning: whether it's a new framework, a design
+              pattern, or a smarter way to structure a system — I treat every
+              project as a chance to grow.
+            </p>
+            <div class="about-edu">
+              <i class="fa-solid fa-building-columns"></i>
+              <div>
+                <strong
+                  >Higher Institute of Computers, Information &amp; Management
+                  Technology</strong
+                >
+                <span>Computer Science · 4th Year · Expected 2025</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-terminal reveal" data-delay="200">
+            <div class="terminal-bar">
+              <span class="t-dot td-r"></span>
+              <span class="t-dot td-y"></span>
+              <span class="t-dot td-g"></span>
+              <span class="t-title">ahmed@dev:~$</span>
+            </div>
+            <div class="terminal-body">
+              <div class="t-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">whoami</span>
+              </div>
+              <div class="t-out">ahmed okasha — Backend Developer</div>
+
+              <div class="t-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">cat education.txt</span>
+              </div>
+              <div class="t-out">Institute : HICIT</div>
+              <div class="t-out">Major : Computer Science</div>
+              <div class="t-out">Year : 4th (Final)</div>
+
+              <div class="t-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">cat focus.txt</span>
+              </div>
+              <div class="t-out">→ Backend Development</div>
+              <div class="t-out">→ REST API Design</div>
+              <div class="t-out">→ Database Architecture</div>
+              <div class="t-out">→ System Design</div>
+
+              <div class="t-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cmd">echo $STATUS</span>
+              </div>
+              <div class="t-out t-green">Open to work &amp; internships ✓</div>
+
+              <div class="t-line blink-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cursor-term">█</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ SKILLS ══════════ -->
+    <section id="skills">
+      <div class="section-container">
+        <div class="sec-label reveal">
+          <span class="mono-text">// 02.</span> Skills
+        </div>
+        <h2 class="sec-title reveal">
+          WHAT I KNOW<span class="accent-dot">.</span>
+        </h2>
+
+        <div class="skills-top reveal" data-delay="100">
+          <div class="skill-pill">
+            <i class="fa-brands fa-node-js"></i> Node.js
+          </div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-python"></i> Python
+          </div>
+          <div class="skill-pill"><i class="fa-solid fa-c"></i> C / C++</div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-js"></i> JavaScript
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-database"></i> MySQL
+          </div>
+          <div class="skill-pill"><i class="fa-solid fa-leaf"></i> MongoDB</div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-plug"></i> REST APIs
+          </div>
+          <div class="skill-pill"><i class="fa-brands fa-git-alt"></i> Git</div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-github"></i> GitHub
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-terminal"></i> Linux
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-shield-halved"></i> Auth / JWT
+          </div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-diagram-project"></i> System Design
+          </div>
+          <div class="skill-pill"><i class="fa-brands fa-html5"></i> HTML5</div>
+          <div class="skill-pill">
+            <i class="fa-brands fa-css3-alt"></i> CSS3
+          </div>
+          <div class="skill-pill"><i class="fa-solid fa-sitemap"></i> OOP</div>
+          <div class="skill-pill">
+            <i class="fa-solid fa-brain"></i> Problem Solving
+          </div>
+        </div>
+
+        <div class="tech-bars reveal" data-delay="200">
+          <h3 class="bars-title">
+            <span class="mono-text">// Proficiency</span>
+          </h3>
+          <div class="bar-item">
+            <div class="bar-row">
+              <span>JavaScript / Node.js</span><span class="bar-pct">82%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="82%"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-row">
+              <span>Python</span><span class="bar-pct">75%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="75%"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-row">
+              <span>SQL / Databases</span><span class="bar-pct">78%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="78%"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-row">
+              <span>C / C++</span><span class="bar-pct">70%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="70%"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-row">
+              <span>HTML / CSS / Frontend</span><span class="bar-pct">85%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="85%"></div>
+            </div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-row">
+              <span>Git &amp; Dev Tools</span><span class="bar-pct">88%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="88%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ PROJECTS ══════════ -->
+    <section id="projects">
+      <div class="section-container">
+        <div class="sec-label reveal">
+          <span class="mono-text">// 03.</span> Projects
+        </div>
+        <h2 class="sec-title reveal">
+          WHAT I BUILT<span class="accent-dot">.</span>
+        </h2>
+
+        <div class="projects-grid">
+          <div class="proj-card reveal" data-delay="0">
+            <div class="proj-img-wrap">
+              <img
+                src="#"
+                alt="Care at Home"
+                class="proj-img"
+              />
+              <div class="proj-overlay">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="proj-btn"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+                <a href="#" class="proj-btn proj-btn-outline"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-tags-row">
+                <span class="ptag">HTML</span><span class="ptag">CSS</span
+                ><span class="ptag">JS</span>
+              </div>
+              <h3 class="proj-title">project one</h3>
+              <p class="proj-desc">
+                A comprehensive medical service platform for booking home
+                visits, browsing doctor profiles, and managing appointments —
+                built for real-world healthcare delivery.
+              </p>
+              <div class="proj-links">
+                <a href="#" target="_blank"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Demo</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal" data-delay="120">
+            <div class="proj-img-wrap">
+              <img src="#" alt="#" class="proj-img" />
+              <div class="proj-overlay">
+                <a href="#" class="proj-btn"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+                <a
+                  href="https://github.com/ahmedokasha"
+                  target="_blank"
+                  class="proj-btn proj-btn-outline"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-tags-row">
+                <span class="ptag">HTML5</span><span class="ptag">CSS</span
+                ><span class="ptag">JS</span>
+              </div>
+              <h3 class="proj-title">project two</h3>
+              <p class="proj-desc">
+                A modern, clean web interface built with attention to user
+                experience and visual design — featuring smooth interactions and
+                a fully responsive layout.
+              </p>
+              <div class="proj-links">
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Demo</a
+                >
+                <a href="https://github.com/ahmedokasha" target="_blank"
+                  ><i class="fa-brands fa-github"></i> GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal" data-delay="240">
+            <div class="proj-img-wrap proj-img-placeholder">
+              <div class="placeholder-inner">
+                <i class="fa-solid fa-code placeholder-icon"></i>
+                <span>Project Three</span>
+              </div>
+              <div class="proj-overlay">
+                <a href="#" class="proj-btn"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+                <a href="#" class="proj-btn proj-btn-outline"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-tags-row">
+                <span class="ptag">Node.js</span
+                ><span class="ptag">Express</span><span class="ptag">SQL</span>
+              </div>
+              <h3 class="proj-title">Project Three</h3>
+              <p class="proj-desc">
+                A backend system with RESTful API endpoints, user
+                authentication, and database integration — built for scalability
+                and clean architecture.
+              </p>
+              <div class="proj-links">
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Demo</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal" data-delay="0">
+            <div class="proj-img-wrap proj-img-placeholder">
+              <div class="placeholder-inner">
+                <i class="fa-solid fa-database placeholder-icon"></i>
+                <span>Project Four</span>
+              </div>
+              <div class="proj-overlay">
+                <a href="#" class="proj-btn"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+                <a href="#" class="proj-btn proj-btn-outline"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-tags-row">
+                <span class="ptag">Python</span><span class="ptag">MySQL</span
+                ><span class="ptag">API</span>
+              </div>
+              <h3 class="proj-title">Project Four</h3>
+              <p class="proj-desc">
+                Data-driven application featuring automated workflows,
+                structured database schema design, and efficient query
+                optimization for high performance.
+              </p>
+              <div class="proj-links">
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Demo</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal" data-delay="120">
+            <div class="proj-img-wrap proj-img-placeholder">
+              <div class="placeholder-inner">
+                <i class="fa-solid fa-server placeholder-icon"></i>
+                <span>Project Five</span>
+              </div>
+              <div class="proj-overlay">
+                <a href="#" class="proj-btn"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+                <a href="#" class="proj-btn proj-btn-outline"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-tags-row">
+                <span class="ptag">JavaScript</span
+                ><span class="ptag">MongoDB</span><span class="ptag">JWT</span>
+              </div>
+              <h3 class="proj-title">Project Five</h3>
+              <p class="proj-desc">
+                Full authentication system with JWT tokens, role-based access
+                control, and secure session management — production-ready and
+                well-documented.
+              </p>
+              <div class="proj-links">
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Demo</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="proj-card reveal" data-delay="240">
+            <div class="proj-img-wrap proj-img-placeholder">
+              <div class="placeholder-inner">
+                <i class="fa-solid fa-sitemap placeholder-icon"></i>
+                <span>Project Six</span>
+              </div>
+              <div class="proj-overlay">
+                <a href="#" class="proj-btn"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Live</a
+                >
+                <a href="#" class="proj-btn proj-btn-outline"
+                  ><i class="fa-brands fa-github"></i> Code</a
+                >
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-tags-row">
+                <span class="ptag">C++</span><span class="ptag">OOP</span
+                ><span class="ptag">Algorithms</span>
+              </div>
+              <h3 class="proj-title">Project Six</h3>
+              <p class="proj-desc">
+                Object-oriented system showcasing clean design patterns,
+                efficient algorithms, and modular architecture — built as part
+                of academic coursework.
+              </p>
+              <div class="proj-links">
+                <a href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Demo</a
+                >
+                <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ CONTACT ══════════ -->
+    <section id="contact">
+      <div class="section-container">
+        <div class="sec-label reveal">
+          <span class="mono-text">// 04.</span> Contact
+        </div>
+        <h2 class="sec-title reveal">
+          LET'S TALK<span class="accent-dot">.</span>
+        </h2>
+
+        <div class="contact-grid">
+          <div class="contact-left reveal" data-delay="100">
+            <p class="contact-intro">
+              Whether it's a project, internship, collaboration, or just a
+              technical conversation — my inbox is always open.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:ahmad.okash.990@gmail.com" class="ch-item">
+                <div class="ch-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="ch-info">
+                  <span class="ch-label">Email</span>
+                  <span class="ch-val">ahmad.okash.990@gmail.com</span>
+                </div>
+                <i class="fa-solid fa-arrow-right ch-arrow"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ahmed-okasha-bb00b5397"
+                target="_blank"
+                rel="noopener"
+                class="ch-item"
+              >
+                <div class="ch-icon">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="ch-info">
+                  <span class="ch-label">LinkedIn</span>
+                  <span class="ch-val">ahmed-okasha</span>
+                </div>
+                <i class="fa-solid fa-arrow-right ch-arrow"></i>
+              </a>
+              <a
+                href="https://github.com/ahmedokasha"
+                target="_blank"
+                rel="noopener"
+                class="ch-item"
+              >
+                <div class="ch-icon"><i class="fa-brands fa-github"></i></div>
+                <div class="ch-info">
+                  <span class="ch-label">GitHub</span>
+                  <span class="ch-val">ahmedokasha</span>
+                </div>
+                <i class="fa-solid fa-arrow-right ch-arrow"></i>
+              </a>
+              <a
+                href="https://wa.me/201248785514"
+                target="_blank"
+                rel="noopener"
+                class="ch-item ch-wa"
+              >
+                <div class="ch-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="ch-info">
+                  <span class="ch-label">WhatsApp</span>
+                  <span class="ch-val">+201248785514</span>
+                </div>
+                <i class="fa-solid fa-arrow-right ch-arrow"></i>
+              </a>
+            </div>
+          </div>
+
+          <form
+            class="contact-form reveal"
+            data-delay="200"
+            id="contactForm"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label>First Name</label>
+                <input type="text" placeholder="AHMED" required />
+              </div>
+              <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" placeholder="OKASHA" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input
+                type="text"
+                placeholder="Internship / Project / Collaboration..."
+              />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea
+                placeholder="Tell me what you have in mind..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="form-submit">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════ FOOTER ══════════ -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <span class="footer-logo">[ahmed.dev]</span>
+          <nav class="footer-nav">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <div class="footer-socials">
+            <a href="https://github.com/ahmedokasha" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ahmed-okasha-bb00b5397"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://x.com/EnG_ahmedokasha" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/iamahmedokasha" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="https://www.facebook.com/share/1MKEnHeymf/" target="_blank"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://wa.me/201248785514" target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© 2026 AHMED OKASHA · Built with passion &amp; clean code</span
+          >
+          <span class="mono-text footer-status">// status: online</span>
+        </div>
+      </div>
+    </footer>
+
+    <button id="scrollTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="ar" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kareem Al-Gamal | Cybersecurity & Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+  <body>
+    <!-- Cyber + Robot animated background canvas -->
+    <canvas id="cyberCanvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#" class="nav-logo" data-anim="fade-down" data-anim-delay="0">
+          <span class="logo-bracket">&lt;</span>Kareem<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn-hire"><i class="fa-solid fa-bolt"></i> Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="bg-grid"></div>
+      <div class="bg-orb orb-1"></div>
+      <div class="bg-orb orb-2"></div>
+      <div class="bg-orb orb-3"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="available-badge" data-anim="fade-up" data-anim-delay="80"><span class="pulse-dot"></span>Available for work</div>
+          <p class="hero-greeting" data-anim="fade-up" data-anim-delay="160">Hi, I am</p>
+          <h1 class="hero-name" data-anim="fade-up" data-anim-delay="240">
+            <span class="name-line">Kareem</span>
+            <span class="name-line accent">Al-Gamal</span>
+          </h1>
+          <div class="hero-role" data-anim="fade-up" data-anim-delay="340">
+            <span class="role-prefix">&gt;&nbsp;</span>
+            <span class="typed-text" id="typedText"></span>
+            <span class="cursor" id="cursor">|</span>
+          </div>
+          <p class="hero-desc" data-anim="fade-up" data-anim-delay="420">I build smart solutions, secure systems, and turn ideas into real projects.<br/>Passionate about cybersecurity, engineering, and robot design.</p>
+          <div class="hero-tags" data-anim="fade-up" data-anim-delay="500">
+            <span class="tag"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="tag"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</span>
+            <span class="tag"><i class="fa-solid fa-robot"></i> Robotics</span>
+          </div>
+          <div class="hero-buttons" data-anim="fade-up" data-anim-delay="580">
+            <a href="#contact" class="btn-primary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+            <a href="#projects" class="btn-secondary"><i class="fa-solid fa-eye"></i> View Projects</a>
+            <button class="btn-cv" id="cvBtn" type="button"><i class="fa-solid fa-file-arrow-down"></i> Download CV</button>
+          </div>
+          <div class="social-links" data-anim="fade-up" data-anim-delay="660">
+            <a href="https://github.com/Eng-Kareem0" class="social-link" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/kareem-algamal-5315a630b" class="social-link" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://x.com/KEMO_TAREK_10" class="social-link" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/share/1B6o9oa2YG/" class="social-link" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/kemo_algamal" class="social-link" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/201128279141" class="social-link" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="hero-image-wrap" data-anim="slide-right" data-anim-delay="300">
+          <div class="image-card">
+            <img src="./images/kareem.jpg" alt="Kareem Al-Gamal" class="hero-photo" />
+            <span class="float-dot dot-a"></span>
+            <span class="float-dot dot-b"></span>
+            <span class="float-dot dot-c"></span>
+          </div>
+          <div class="code-tag code-tag-top">&lt;Kareem /&gt;</div>
+          <div class="code-tag code-tag-bottom">const dev = true;</div>
+          <div class="corner corner-tl"></div><div class="corner corner-tr"></div>
+          <div class="corner corner-bl"></div><div class="corner corner-br"></div>
+        </div>
+      </div>
+      <div class="stats-bar" data-anim="zoom-in" data-anim-delay="600">
+        <div class="stat-item"><span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span><p class="stat-label">Years Experience</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span><p class="stat-label">Projects Done</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span><p class="stat-label">Happy Clients</p></div>
+        <div class="stat-divider"></div>
+        <div class="stat-item"><span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span><p class="stat-label">CTF Challenges</p></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <div class="section-header" data-anim="flip-up" data-anim-delay="0">
+          <p class="section-sub">// who am i</p>
+          <h2 class="section-title">About <span class="accent">Me</span></h2>
+        </div>
+        <div class="about-bio">
+          <div class="about-bio-text" data-anim="slide-left" data-anim-delay="100">
+            <p>Hey! I'm <span class="highlight">Kareem Al-Gamal</span>, a Computer and Communications Engineering student at the <span class="highlight">Faculty of Engineering, Mansoura University</span>. I'm passionate about technology and always curious about how things work — especially when it comes to networking, cybersecurity, and building smart systems.</p>
+            <p>My journey in tech started with learning web development through <span class="highlight">HTML, CSS, and JavaScript</span>, but over time my interest shifted more toward Networking and <span class="highlight">Cybersecurity</span> — I've been building my knowledge in network fundamentals, Linux environments, ethical hacking concepts, and problem-solving through <span class="highlight">CTF (Capture the Flag)</span> challenges.</p>
+            <p>On the other side, I have a deep passion for <span class="highlight">Robotics Design</span>. I love combining hardware and software — building machines that move, sense, and respond to the world. Whether it's prototyping with Arduino or designing robot structures, I find it incredibly exciting.</p>
+            <div class="about-details">
+              <div class="detail-item"><i class="fa-solid fa-user detail-icon"></i><span><strong>Name:</strong> Kareem Al-Gamal</span></div>
+              <div class="detail-item"><i class="fa-solid fa-graduation-cap detail-icon"></i><span><strong>University:</strong> Mansoura University – Faculty of Engineering</span></div>
+              <div class="detail-item"><i class="fa-solid fa-location-dot detail-icon"></i><span><strong>Location:</strong> Egypt 🇪🇬, Almahallha, Bulqina</span></div>
+              <div class="detail-item"><i class="fa-solid fa-briefcase detail-icon"></i><span><strong>Status:</strong> Open to opportunities &amp; freelance work</span></div>
+              <div class="detail-item"><i class="fa-solid fa-language detail-icon"></i><span><strong>Languages:</strong> Arabic (Native), English (Intermediate)</span></div>
+            </div>
+            <a href="#contact" class="btn-primary" style="margin-top:1.5rem;display:inline-flex"><i class="fa-solid fa-paper-plane"></i> Let's Work Together</a>
+          </div>
+          <div class="about-cards-side" data-anim="slide-right" data-anim-delay="200">
+            <div class="about-card"><i class="fa-solid fa-graduation-cap about-icon"></i><div><h3>Education</h3><p>Faculty of Engineering – Mansoura University. Computer Engineering department, passionate about both software and hardware.</p></div></div>
+            <div class="about-card"><i class="fa-solid fa-shield-halved about-icon"></i><div><h3>Cybersecurity</h3><p>Studying ethical hacking, penetration testing, network security, Linux security, and solving CTF challenges regularly.</p></div></div>
+            <div class="about-card"><i class="fa-solid fa-robot about-icon"></i><div><h3>Robotics Design</h3><p>Designing and building robots, working with Arduino, sensors, and motors to create intelligent autonomous systems.</p></div></div>
+            <div class="about-card"><i class="fa-solid fa-code about-icon"></i><div><h3>Web Development</h3><p>Building clean, responsive, and visually striking web projects using HTML, CSS, and JavaScript from scratch.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="section-container">
+        <div class="section-header" data-anim="flip-up" data-anim-delay="0">
+          <p class="section-sub">// what i know</p>
+          <h2 class="section-title">My <span class="accent">Skills</span></h2>
+        </div>
+        <div class="skills-grid" data-anim="fade-up" data-anim-delay="150">
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-brands fa-html5"></i> HTML5</span><span>85%</span></div><div class="skill-track"><div class="skill-fill" data-width="85"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-brands fa-css3-alt"></i> CSS3</span><span>80%</span></div><div class="skill-track"><div class="skill-fill" data-width="80"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-brands fa-js"></i> JavaScript</span><span>70%</span></div><div class="skill-track"><div class="skill-fill" data-width="70"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-solid fa-shield-halved"></i> Cybersecurity</span><span>65%</span></div><div class="skill-track"><div class="skill-fill" data-width="65"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-solid fa-network-wired"></i> Networking</span><span>60%</span></div><div class="skill-track"><div class="skill-fill" data-width="60"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-solid fa-robot"></i> Robotics Design</span><span>75%</span></div><div class="skill-track"><div class="skill-fill" data-width="75"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-brands fa-linux"></i> Linux</span><span>60%</span></div><div class="skill-track"><div class="skill-fill" data-width="60"></div></div></div>
+          <div class="skill-bar-item"><div class="skill-info"><span><i class="fa-solid fa-terminal"></i> CTF / Hacking</span><span>55%</span></div><div class="skill-track"><div class="skill-fill" data-width="55"></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section" id="services">
+      <div class="section-container">
+        <div class="section-header" data-anim="flip-up" data-anim-delay="0">
+          <p class="section-sub">// what i offer</p>
+          <h2 class="section-title">My <span class="accent">Services</span></h2>
+        </div>
+        <div class="services-grid" data-anim="fade-up" data-anim-delay="150">
+          <div class="service-card"><div class="service-icon"><i class="fa-solid fa-globe"></i></div><h3>Web Development</h3><p>Building fast, responsive, and visually stunning websites from scratch. Clean code, modern design, pixel-perfect results.</p><ul class="service-list"><li><i class="fa-solid fa-check"></i> Landing pages &amp; portfolios</li><li><i class="fa-solid fa-check"></i> Responsive design for all devices</li><li><i class="fa-solid fa-check"></i> UI animations &amp; interactions</li></ul><a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="service-card featured"><div class="service-badge">Most Popular</div><div class="service-icon"><i class="fa-solid fa-user-secret"></i></div><h3>Security Consultation</h3><p>Basic vulnerability assessments, security reviews, and cybersecurity advice for personal and small-business projects.</p><ul class="service-list"><li><i class="fa-solid fa-check"></i> Website security review</li><li><i class="fa-solid fa-check"></i> Network vulnerability scanning</li><li><i class="fa-solid fa-check"></i> Security best-practices guide</li></ul><a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="service-card"><div class="service-icon"><i class="fa-solid fa-robot"></i></div><h3>Robot Design</h3><p>Designing and prototyping robots for educational competitions, research, and practical use with Arduino.</p><ul class="service-list"><li><i class="fa-solid fa-check"></i> Robot concept &amp; structure design</li><li><i class="fa-solid fa-check"></i> Arduino programming</li><li><i class="fa-solid fa-check"></i> Sensor &amp; motor integration</li></ul><a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="service-card"><div class="service-icon"><i class="fa-solid fa-chalkboard-user"></i></div><h3>Tech Teaching</h3><p>Teaching beginners the fundamentals of web development and basic cybersecurity. Simple, clear, practical sessions.</p><ul class="service-list"><li><i class="fa-solid fa-check"></i> HTML, CSS &amp; JS basics</li><li><i class="fa-solid fa-check"></i> Intro to cybersecurity</li><li><i class="fa-solid fa-check"></i> One-on-one or group sessions</li></ul><a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="service-card"><div class="service-icon"><i class="fa-solid fa-bug"></i></div><h3>Bug Hunting</h3><p>Hunting for bugs and vulnerabilities in web applications, testing for XSS, SQL injection, and misconfigured permissions.</p><ul class="service-list"><li><i class="fa-solid fa-check"></i> Manual &amp; automated testing</li><li><i class="fa-solid fa-check"></i> Detailed vulnerability reports</li><li><i class="fa-solid fa-check"></i> Fix recommendations</li></ul><a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a></div>
+          <div class="service-card"><div class="service-icon"><i class="fa-solid fa-palette"></i></div><h3>UI / UX Design</h3><p>Designing clean, modern, and user-friendly interfaces focused on great user experience and visual hierarchy.</p><ul class="service-list"><li><i class="fa-solid fa-check"></i> Wireframes &amp; mockups</li><li><i class="fa-solid fa-check"></i> Color &amp; typography systems</li><li><i class="fa-solid fa-check"></i> Interactive prototypes</li></ul><a href="#contact" class="service-link">Get Started <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="section-container">
+        <div class="section-header" data-anim="flip-up" data-anim-delay="0">
+          <p class="section-sub">// what i built</p>
+          <h2 class="section-title">My <span class="accent">Projects</span></h2>
+        </div>
+        <div class="project-filter" data-anim="fade-up" data-anim-delay="50">
+          <button class="filter-btn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> All</button>
+          <button class="filter-btn" data-filter="cybersecurity"><i class="fa-solid fa-shield-halved"></i> Cybersecurity</button>
+          <button class="filter-btn" data-filter="robot"><i class="fa-solid fa-robot"></i> Robotics</button>
+          <button class="filter-btn" data-filter="webdev"><i class="fa-solid fa-code"></i> Web Dev</button>
+          <button class="filter-btn" data-filter="design"><i class="fa-solid fa-palette"></i> Graphic Design</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid" data-anim="fade-up" data-anim-delay="150">
+
+          <div class="project-card" data-category="cybersecurity"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="Network Scanner Tool" data-desc="A network scanning tool built for learning purposes — discovers open ports, running services, and potential vulnerabilities on a local network."
+               data-icon="fa-solid fa-shield-halved" data-color="pv-security"
+               data-imgkey="proj_network_scanner">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-security">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-shield-halved pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Network Scanner Tool</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>A network scanning tool built for learning purposes — discovers open ports, running services, and potential vulnerabilities on a local network.</p>
+              <div class="project-tags"><span>Python</span><span>Networking</span><span>Security</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-category="robot"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="Line Following Robot" data-desc="Designed and built a line-following robot using Arduino and IR sensors. Competed in robotics events and achieved autonomous path navigation."
+               data-icon="fa-solid fa-robot" data-color="pv-robotics"
+               data-imgkey="proj_line_robot">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-robotics">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-robot pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Line Following Robot</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>Designed and built a line-following robot using Arduino and IR sensors. Competed in robotics events and achieved autonomous path navigation.</p>
+              <div class="project-tags"><span>Arduino</span><span>C++</span><span>Robotics</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-category="cybersecurity"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="CTF Write-ups Collection" data-desc="A collection of my CTF challenge solutions and write-ups covering web exploitation, cryptography, steganography, and reverse engineering."
+               data-icon="fa-solid fa-flag" data-color="pv-ctf"
+               data-imgkey="proj_ctf">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-ctf">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-flag pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>CTF Write-ups Collection</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>A collection of my CTF challenge solutions and write-ups covering web exploitation, cryptography, steganography, and reverse engineering.</p>
+              <div class="project-tags"><span>CTF</span><span>Security</span><span>Linux</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-category="webdev"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="Password Strength Checker" data-desc="A web app that analyzes password strength in real time — checking entropy, common patterns, and giving actionable improvement tips to users."
+               data-icon="fa-solid fa-lock" data-color="pv-password"
+               data-imgkey="proj_password">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-password">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-lock pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Password Strength Checker</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>A web app that analyzes password strength in real time — checking entropy, common patterns, and giving actionable improvement tips to users.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-category="robot"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="Smart Obstacle Robot" data-desc="An obstacle-avoidance robot using ultrasonic sensors and servo motors. The robot autonomously detects and navigates around objects in its path."
+               data-icon="fa-solid fa-microchip" data-color="pv-obstacle"
+               data-imgkey="proj_obstacle">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-obstacle">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-microchip pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Smart Obstacle Robot</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>An obstacle-avoidance robot using ultrasonic sensors and servo motors. The robot autonomously detects and navigates around objects in its path.</p>
+              <div class="project-tags"><span>Arduino</span><span>Sensors</span><span>Robotics</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-category="webdev"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="Personal Portfolio" data-desc="This very portfolio — built from scratch with pure HTML, CSS, and JavaScript. Features typing animations, scroll effects, and a fully responsive layout."
+               data-icon="fa-solid fa-code" data-color="pv-portfolio"
+               data-imgkey="proj_portfolio">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-portfolio">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-code pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Personal Portfolio</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>This very portfolio — built from scratch with pure HTML, CSS, and JavaScript. Features typing animations, scroll effects, and a fully responsive layout.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-category="design"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="Brand Identity Design" data-desc="A complete brand identity package including logo design, color palette, typography system, and visual guidelines for a tech startup project."
+               data-icon="fa-solid fa-swatchbook" data-color="pv-design"
+               data-imgkey="proj_brand">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-design">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-swatchbook pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>Brand Identity Design</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>A complete brand identity package including logo design, color palette, typography system, and visual guidelines for a tech startup project.</p>
+              <div class="project-tags"><span>Figma</span><span>Branding</span><span>UI Design</span></div>
+            </div>
+          </div>
+          <div class="project-card" data-category="design"
+               data-live="#" data-github="https://github.com/Eng-Kareem0"
+               data-title="UI/UX Dashboard Design" data-desc="A modern admin dashboard UI with dark/light modes, data visualization components, and a fully interactive prototype built in Figma."
+               data-icon="fa-solid fa-palette" data-color="pv-ux"
+               data-imgkey="proj_dashboard">
+            <div class="project-visual">
+              <div class="project-visual-bg pv-ux">
+                <div class="pv-grid"></div>
+                <i class="fa-solid fa-palette pv-icon"></i>
+                <div class="pv-rings"><span></span><span></span></div>
+              </div>
+              <div class="project-overlay-hover">
+                <span class="btn-view-proj"><i class="fa-solid fa-eye"></i> View Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-top">
+                <h3>UI/UX Dashboard Design</h3>
+                <a href="https://github.com/Eng-Kareem0" class="project-gh-link" target="_blank" onclick="event.stopPropagation()"><i class="fa-brands fa-github"></i></a>
+              </div>
+              <p>A modern admin dashboard UI with dark/light modes, data visualization components, and a fully interactive prototype built in Figma.</p>
+              <div class="project-tags"><span>Figma</span><span>UI/UX</span><span>Prototype</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="show-more-wrap" id="projectsShowMoreWrap" style="display:none;">
+          <button class="btn-show-more" id="projectsShowMoreBtn">
+            <i class="fa-solid fa-chevron-down" id="projectsShowMoreIcon"></i>
+            <span id="projectsShowMoreText">Show More</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section" id="certificates">
+      <div class="section-container">
+        <div class="section-header" data-anim="flip-up" data-anim-delay="0">
+          <p class="section-sub">// what i earned</p>
+          <h2 class="section-title">My <span class="accent">Certificates</span></h2>
+          <p class="section-desc">Credentials and achievements from my learning journey</p>
+        </div>
+        <div class="cert-filter" data-anim="fade-up" data-anim-delay="50">
+          <button class="cert-filter-btn active" data-filter="all"><i class="fa-solid fa-layer-group"></i> All</button>
+          <button class="cert-filter-btn" data-filter="cybersecurity"><i class="fa-solid fa-brain"></i> AI &amp; Tech</button>
+          <button class="cert-filter-btn" data-filter="webdev"><i class="fa-solid fa-code"></i> Web &amp; Design</button>
+          <button class="cert-filter-btn" data-filter="robotics"><i class="fa-solid fa-robot"></i> Robotics &amp; Engineering</button>
+        </div>
+                <div class="certs-grid" id="certsGrid" data-anim="fade-up" data-anim-delay="150">
+
+          <div class="cert-card" data-category="webdev"
+               data-cert-title="CAT Reloaded – Motion Graphics &amp; Graphic Design Competition"
+               data-cert-issuer="CAT Reloaded"
+               data-cert-date="2024"
+               data-cert-color="#8b1a1a"
+               data-cert-icon="fa-solid fa-award"
+               data-cert-desc="Received a certificate from CAT Reloaded after participating in a month-long competitive Graphic Design and Motion Graphics challenge. Achieved 2nd place in Motion Graphics and 5th place in Graphic Design among many participants. Throughout the competition, I enhanced my creative thinking, visual storytelling, branding, and animation skills while working under deadlines and delivering professional-quality designs.">
+            <div class="cert-visual cert-cat-reloaded">
+              <img src="./images/Certificate1.jpeg" alt="CAT Reloaded Certificate" class="cert-real-img" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+            </div>
+            <div class="cert-info">
+              <h4>CAT Reloaded – Motion Graphics &amp; Graphic Design</h4>
+              <p class="cert-issuer-tag"><i class="fa-solid fa-building"></i> CAT Reloaded</p>
+              <p class="cert-date-tag"><i class="fa-solid fa-calendar-check"></i> 2024</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-category="robotics"
+               data-cert-title="Mansoura Robotics – Hardware &amp; PCB Training"
+               data-cert-issuer="Mansoura Robotics"
+               data-cert-date="2025"
+               data-cert-color="#0d3b6e"
+               data-cert-icon="fa-solid fa-microchip"
+               data-cert-desc="Completed an intensive training program with Mansoura Robotics focused on Hardware Engineering, Electronic Circuits, PCB Design, and practical electronics applications. The program included hands-on sessions and real-world implementations during every workshop. As a final project, I collaborated on building a capacitor-powered battery system, which strengthened my technical problem-solving and circuit analysis skills.">
+            <div class="cert-visual cert-hardware">
+              <img src="./images/Certificate2.jpeg" alt="Hardware PCB Certificate" class="cert-real-img" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+            </div>
+            <div class="cert-info">
+              <h4>Mansoura Robotics – Hardware &amp; PCB Training</h4>
+              <p class="cert-issuer-tag"><i class="fa-solid fa-building"></i> Mansoura Robotics</p>
+              <p class="cert-date-tag"><i class="fa-solid fa-calendar-check"></i> 2025</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-category="robotics"
+               data-cert-title="Robotics Training – RC Smart Car Project"
+               data-cert-issuer="Tech Wave – Surf the Future"
+               data-cert-date="7/8/2025"
+               data-cert-color="#1a3a5c"
+               data-cert-icon="fa-solid fa-robot"
+               data-cert-desc="Completed a Robotics training program where I designed and developed an RC Smart Car capable of Line Following, Obstacle Avoidance, and both Manual and Automatic control modes. During the program, I gained practical experience working with Arduino, sensors, motor drivers, and embedded systems while improving my understanding of robotics logic and automation systems.">
+            <div class="cert-visual cert-techwave">
+              <img src="./images/Certificate3.jpeg" alt="Tech Wave Robotics Certificate" class="cert-real-img" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+            </div>
+            <div class="cert-info">
+              <h4>Robotics Training – RC Smart Car Project</h4>
+              <p class="cert-issuer-tag"><i class="fa-solid fa-building"></i> Tech Wave – Surf the Future</p>
+              <p class="cert-date-tag"><i class="fa-solid fa-calendar-check"></i> 7/8/2025</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-category="webdev"
+               data-cert-title="Web Design Training"
+               data-cert-issuer="Mansoura University / ITC"
+               data-cert-date="June – July 2025"
+               data-cert-color="#005c3a"
+               data-cert-icon="fa-solid fa-code"
+               data-cert-desc="Completed a Web Design training program focused on developing responsive and interactive websites using HTML, CSS, and JavaScript. Built multiple web projects and gained strong knowledge in front-end development, UI design principles, responsive layouts, and user experience optimization.">
+            <div class="cert-visual cert-webdesign">
+              <img src="./images/Certificate4.jpeg" alt="Web Design Certificate" class="cert-real-img" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+            </div>
+            <div class="cert-info">
+              <h4>Web Design Training – Mansoura University</h4>
+              <p class="cert-issuer-tag"><i class="fa-solid fa-building"></i> Mansoura University / ITC</p>
+              <p class="cert-date-tag"><i class="fa-solid fa-calendar-check"></i> June – July 2025</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-category="robotics"
+               data-cert-title="C Programming Language – Mansoura Robotics"
+               data-cert-issuer="Mansoura Robotics"
+               data-cert-date="2025"
+               data-cert-color="#1a2a6c"
+               data-cert-icon="fa-solid fa-terminal"
+               data-cert-desc="Successfully completed a month-long C Programming training program with Mansoura Robotics. Learned core programming concepts including variables, conditions, loops, functions, arrays, and problem-solving techniques. The course significantly improved my logical thinking, coding fundamentals, and programming skills required for embedded systems and software development.">
+            <div class="cert-visual cert-cprog">
+              <img src="./images/Certificate5.jpeg" alt="C Programming Certificate" class="cert-real-img" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+            </div>
+            <div class="cert-info">
+              <h4>C Programming Language – Mansoura Robotics</h4>
+              <p class="cert-issuer-tag"><i class="fa-solid fa-building"></i> Mansoura Robotics</p>
+              <p class="cert-date-tag"><i class="fa-solid fa-calendar-check"></i> 2025</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-category="webdev"
+               data-cert-title="Graphic Design &amp; AI Workshop"
+               data-cert-issuer="Saber Group Courses Academy"
+               data-cert-date="March 2026"
+               data-cert-color="#7a0000"
+               data-cert-icon="fa-solid fa-palette"
+               data-cert-desc="Completed a one-week Graphic Design workshop focused on integrating Artificial Intelligence tools into the creative design process. Learned how to use AI-powered technologies to improve visual content creation, design workflows, and creative productivity while exploring modern trends in digital design.">
+            <div class="cert-visual cert-saber">
+              <img src="./images/Certificate6.jpeg" alt="Graphic Design AI Certificate" class="cert-real-img" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+            </div>
+            <div class="cert-info">
+              <h4>Graphic Design &amp; AI Workshop</h4>
+              <p class="cert-issuer-tag"><i class="fa-solid fa-building"></i> Saber Group Courses Academy</p>
+              <p class="cert-date-tag"><i class="fa-solid fa-calendar-check"></i> March 2026</p>
+            </div>
+          </div>
+
+          <div class="cert-card" data-category="cybersecurity"
+               data-cert-title="Build with AI – Masr Edition | Google &amp; ITI"
+               data-cert-issuer="Google for Developers &amp; ITI"
+               data-cert-date="2026"
+               data-cert-color="#1a6b00"
+               data-cert-icon="fa-solid fa-brain"
+               data-cert-desc="Received a Certificate of Attendance for participating in the Build with AI Masr Edition virtual sessions, organized in collaboration with Google and ITI. The program focused on modern Artificial Intelligence concepts, AI-powered technologies, and the future of smart digital solutions. Through the sessions, I explored practical AI applications, gained insights into emerging technologies, and strengthened my understanding of how AI can be integrated into real-world projects and innovative solutions.">
+            <div class="cert-visual cert-buildai">
+              <img src="./images/Certificate7.jpeg" alt="Build with AI Certificate" class="cert-real-img" />
+              <div class="cert-hover-overlay"><i class="fa-solid fa-expand"></i> View Certificate</div>
+            </div>
+            <div class="cert-info">
+              <h4>Build with AI: Masr Edition – Google &amp; ITI</h4>
+              <p class="cert-issuer-tag"><i class="fa-solid fa-building"></i> Google for Developers &amp; ITI</p>
+              <p class="cert-date-tag"><i class="fa-solid fa-calendar-check"></i> 2026</p>
+            </div>
+          </div>
+
+        </div></div>
+        <div class="show-more-wrap" id="certsShowMoreWrap" style="display:none;">
+          <button class="btn-show-more" id="certsShowMoreBtn">
+            <i class="fa-solid fa-chevron-down" id="certsShowMoreIcon"></i>
+            <span id="certsShowMoreText">Show More</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section-alt" id="contact">
+      <div class="section-container">
+        <div class="section-header" data-anim="flip-up" data-anim-delay="0">
+          <p class="section-sub">// let's talk</p>
+          <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+          <p class="section-desc">Have a project in mind or just want to say hi? I'm always open to new opportunities.</p>
+        </div>
+        <div class="contact-wrapper">
+          <div class="contact-left" data-anim="slide-left" data-anim-delay="100">
+            <a href="mailto:kareemalgamal3@gmail.com" class="contact-info-card"><div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div><div><p class="contact-info-label">Email Me</p><span class="contact-info-val">kareemalgamal3@gmail.com</span></div><i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i></a>
+            <a href="https://wa.me/201128279141" target="_blank" class="contact-info-card"><div class="contact-info-icon"><i class="fa-brands fa-whatsapp"></i></div><div><p class="contact-info-label">WhatsApp</p><span class="contact-info-val">+20 112 827 9141</span></div><i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i></a>
+            <a href="https://www.google.com/maps/search/Al+Mahalla+Al+Kubra,+Egypt" target="_blank" class="contact-info-card"><div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div><div><p class="contact-info-label">Location</p><span class="contact-info-val">Egypt 🇪🇬, Almahallha, Bulqina</span></div><i class="fa-solid fa-arrow-up-right-from-square contact-arrow"></i></a>
+            <a href="#contactForm" class="contact-info-card"><div class="contact-info-icon"><i class="fa-solid fa-clock"></i></div><div><p class="contact-info-label">Response Time</p><span class="contact-info-val">Within 24 hours</span></div><i class="fa-solid fa-arrow-right contact-arrow"></i></a>
+            <div class="contact-status-card">
+              <div class="status-header"><span class="pulse-dot"></span><span class="status-title">Currently Available</span></div>
+              <div class="status-types">
+                <span><i class="fa-solid fa-check"></i> Freelance Projects</span>
+                <span><i class="fa-solid fa-check"></i> Full-time Opportunities</span>
+                <span><i class="fa-solid fa-check"></i> Collaborations</span>
+                <span><i class="fa-solid fa-check"></i> Internships</span>
+              </div>
+              <a href="#contact" class="btn-primary" style="margin-top:1rem;font-size:0.8rem;padding:0.55rem 1.2rem;"><i class="fa-solid fa-bolt"></i> Let's Work Together</a>
+            </div>
+          </div>
+          <div class="contact-right" data-anim="slide-right" data-anim-delay="200">
+            <div class="contact-form-card" id="contactFormSection">
+              <div class="form-card-header">
+                <i class="fa-solid fa-paper-plane form-card-icon"></i>
+                <div><h3>Send a Message</h3><p>I'll get back to you as soon as possible.</p></div>
+              </div>
+              <form id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group"><label>Your Name</label><div class="form-input-wrap"><i class="fa-solid fa-user"></i><input type="text" id="from_name" placeholder="Kareem Al-Gamal" required /></div></div>
+                  <div class="form-group"><label>Your Email</label><div class="form-input-wrap"><i class="fa-solid fa-envelope"></i><input type="email" id="from_email" placeholder="example@gmail.com" required /></div></div>
+                </div>
+                <div class="form-group"><label>Subject</label><div class="form-input-wrap"><i class="fa-solid fa-tag"></i><input type="text" id="subject" placeholder="What's this about?" /></div></div>
+                <div class="form-group"><label>Message</label><div class="form-input-wrap form-textarea-wrap"><i class="fa-solid fa-message"></i><textarea id="message" placeholder="Tell me about your project or idea..." rows="5" required></textarea></div></div>
+                <button type="submit" class="btn-primary btn-full" id="submitBtn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+                <p id="successMsg" style="display:none;color:#00ff88;margin-top:1rem;text-align:center;font-weight:600;">✅ Message sent successfully! I'll get back to you soon.</p>
+                <p id="errorMsg" style="display:none;color:#ff4d4d;margin-top:1rem;text-align:center;font-weight:600;">❌ Something went wrong. Please try again or contact me directly.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand" data-anim="fade-up" data-anim-delay="0">
+          <p class="footer-logo"><span class="logo-bracket">&lt;</span>Kareem<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span></p>
+          <p class="footer-tagline">Cybersecurity learner · Web developer · Robot designer</p>
+          <p class="footer-location"><i class="fa-solid fa-location-dot"></i> Mansoura, Egypt</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-nav">
+            <li><a href="#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-chevron-right"></i> About</a></li>
+            <li><a href="#skills"><i class="fa-solid fa-chevron-right"></i> Skills</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Services</a></li>
+            <li><a href="#projects"><i class="fa-solid fa-chevron-right"></i> Projects</a></li>
+            <li><a href="#certificates"><i class="fa-solid fa-chevron-right"></i> Certificates</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-nav">
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Web Development</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Security Consulting</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Robot Design</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Bug Hunting</a></li>
+            <li><a href="#services"><i class="fa-solid fa-chevron-right"></i> Tech Teaching</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <div class="footer-social-grid">
+            <a href="https://github.com/Eng-Kareem0" target="_blank" class="footer-social-item"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+            <a href="https://www.linkedin.com/in/kareem-algamal-5315a630b" target="_blank" class="footer-social-item"><i class="fa-brands fa-linkedin-in"></i><span>LinkedIn</span></a>
+            <a href="https://x.com/KEMO_TAREK_10" target="_blank" class="footer-social-item"><i class="fa-brands fa-x-twitter"></i><span>Twitter</span></a>
+            <a href="https://www.instagram.com/kemo_algamal" target="_blank" class="footer-social-item"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+            <a href="https://www.facebook.com/share/1B6o9oa2YG/" target="_blank" class="footer-social-item"><i class="fa-brands fa-facebook"></i><span>Facebook</span></a>
+            <a href="https://wa.me/201128279141" target="_blank" class="footer-social-item"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <span class="accent">Kareem Al-Gamal</span>. All rights reserved.</p>
+        <p>Made with <i class="fa-solid fa-heart footer-heart"></i> Kareem</p>
+      </div>
+    </footer>
+
+    <!-- FAB -->
+    <div class="fab-social" id="fabSocial">
+      <div class="fab-items" id="fabItems">
+        <a href="https://wa.me/201128279141" target="_blank" class="fab-item" title="WhatsApp"><span class="fab-label">WhatsApp</span><span class="fab-icon" style="background:linear-gradient(135deg,#25d366,#128c7e)"><i class="fa-brands fa-whatsapp"></i></span></a>
+        <a href="https://t.me/+201128279141" target="_blank" class="fab-item" title="Telegram"><span class="fab-label">Telegram</span><span class="fab-icon" style="background:linear-gradient(135deg,#2aabee,#0088cc)"><i class="fa-brands fa-telegram"></i></span></a>
+        <a href="https://www.instagram.com/kemo_algamal" target="_blank" class="fab-item" title="Instagram"><span class="fab-label">Instagram</span><span class="fab-icon" style="background:linear-gradient(135deg,#f09433,#dc2743,#bc1888)"><i class="fa-brands fa-instagram"></i></span></a>
+        <a href="https://www.facebook.com/share/1B6o9oa2YG/" target="_blank" class="fab-item" title="Facebook"><span class="fab-label">Facebook</span><span class="fab-icon" style="background:linear-gradient(135deg,#1877f2,#0d5fc4)"><i class="fa-brands fa-facebook"></i></span></a>
+        <a href="https://x.com/KEMO_TAREK_10" target="_blank" class="fab-item" title="Twitter / X"><span class="fab-label">Twitter / X</span><span class="fab-icon" style="background:linear-gradient(135deg,#1c1c1c,#333)"><i class="fa-brands fa-x-twitter"></i></span></a>
+        <a href="https://www.linkedin.com/in/kareem-algamal-5315a630b" target="_blank" class="fab-item" title="LinkedIn"><span class="fab-label">LinkedIn</span><span class="fab-icon" style="background:linear-gradient(135deg,#0a66c2,#0050a0)"><i class="fa-brands fa-linkedin-in"></i></span></a>
+        <a href="https://github.com/Eng-Kareem0" target="_blank" class="fab-item" title="GitHub"><span class="fab-label">GitHub</span><span class="fab-icon" style="background:linear-gradient(135deg,#24292e,#444)"><i class="fa-brands fa-github"></i></span></a>
+      </div>
+      <button class="fab-main" id="fabMain" aria-label="Social Links">
+        <i class="fa-solid fa-share-nodes fab-open-icon"></i>
+        <i class="fa-solid fa-xmark fab-close-icon"></i>
+      </button>
+    </div>
+
+    <!-- FIXED BUTTONS -->
+    <div class="fixed-right-btns">
+      <button class="theme-toggle-fixed" id="themeToggle" aria-label="Toggle theme"><i class="fa-solid fa-moon" id="themeIcon"></i></button>
+      <button class="scroll-top" id="scrollTop"><i class="fa-solid fa-chevron-up"></i></button>
+    </div>
+
+    <!-- MODALS -->
+
+    <!-- CV Modal -->
+    <div class="modal-overlay" id="cvModal">
+      <div class="modal-card cv-modal-card">
+        <button class="modal-close" onclick="closeModal('cvModal')"><i class="fa-solid fa-xmark"></i></button>
+        <img src="data:image/jpeg;base64,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" alt="Kareem CV Preview" class="cv-modal-preview" />
+        <h3 class="modal-title">Kareem's CV / Resume</h3>
+        <p class="modal-subtitle">What would you like to do?</p>
+        <div class="modal-actions">
+          <a href="./Kareem_CV.pdf" download="Kareem_AlGamal_CV.pdf" class="btn-primary modal-btn"><i class="fa-solid fa-file-arrow-down"></i> Download CV</a>
+          <a href="./Kareem_CV.pdf" target="_blank" class="btn-secondary modal-btn"><i class="fa-solid fa-eye"></i> View Online</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+      <div class="modal-card project-modal-card">
+        <button class="modal-close" onclick="closeModal('projectModal')"><i class="fa-solid fa-xmark"></i></button>
+        <div class="proj-modal-visual" id="projModalVisual">
+          <div class="pv-grid"></div>
+          <i class="fa-solid fa-code pv-icon" id="projModalIcon"></i>
+          <div class="pv-rings"><span></span><span></span></div>
+
+        </div>
+        <h3 class="modal-title" id="projModalTitle">Project Title</h3>
+        <p class="modal-subtitle" id="projModalDesc">Project description</p>
+        <div class="modal-actions">
+          <a href="#" id="projModalLive" target="_blank" class="btn-primary modal-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          <a href="#" id="projModalGithub" target="_blank" class="btn-secondary modal-btn"><i class="fa-brands fa-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certificate Modal — 3D Professional -->
+    <div class="modal-overlay" id="certModal">
+      <div class="cert-modal-wrapper" id="certModalWrapper">
+        <button class="cert-modal-x" onclick="closeModal('certModal')">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Big certificate photo -->
+        <div class="cert-modal-img-wrap">
+          <div id="certModalInner"><!-- JS injects photo here --></div>
+        </div>
+
+        <!-- Info panel -->
+        <div class="cert-modal-info" id="certModalInfo">
+          <div class="cert-modal-info-top">
+            <div class="cert-modal-badge" id="certModalBadge">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div style="flex:1;min-width:0;">
+              <h2 class="cert-modal-name" id="certModalTitle">Certificate Title</h2>
+              <div class="cert-modal-meta">
+                <span id="certModalIssuer"><i class="fa-solid fa-building"></i> Issuer</span>
+                <span class="cert-modal-sep">·</span>
+                <span id="certModalDate"><i class="fa-regular fa-calendar"></i> Date</span>
+              </div>
+            </div>
+          </div>
+          <p class="cert-modal-body" id="certModalDesc">Description here.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

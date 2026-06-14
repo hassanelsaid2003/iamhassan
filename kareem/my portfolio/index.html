@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kareem Tarek - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Kareem Tarek</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Get In Touch</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="4.jpg" alt="Kareem Tarek">
+            </div>
+            <div class="hero-content">
+                <h1>Creative Engineer & Designer</h1>
+                <p>I specialize in robotics, control systems, Front end developer, and graphic design, creating innovative solutions that bridge technology and creativity.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="section-container">
+            <div class="section-title">
+                <h2 style="color: rgb(175, 4, 87); ";>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="صورة واتساب بتاريخ 2025-08-18 في 19.39.56_773f8456.jpg" alt="Kareem Tarek at work">
+                </div>
+                <div class="about-text">
+                    <h3>I'm Kareem Tarek, a passionate Engineer & Designer</h3>
+                    <p>I am 20 years old, With over 1 year of experience in robotics, control systems, and graphic design, I specialize in creating innovative solutions that bridge technology and creativity. My work spans from developing autonomous systems to creating visually compelling designs.</p>
+                    <p>My approach combines technical expertise with creative problem-solving to build solutions that meet both functional requirements and aesthetic goals. I'm constantly exploring new technologies and design trends to stay at the forefront of my field.</p>
+                    
+                    <div class="skills">
+                        <h4 style="color: rgb(175, 4, 87); font-size: 1.5rem;">My Skills</h4>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>HTML/CSS</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-level: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>JavaScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-level: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Robotics</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-level: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Control Systems</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-level: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Graphic Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--skill-level: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="section-container">
+            <div class="section-title">
+                <h2 style="color: rgb(175, 4, 87);">My Portfolio</h2>
+            </div>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="control">Control Systems</button>
+                <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="robotics">
+                    <div class="portfolio-image">
+                        <img src="img/صورة واتساب بتاريخ 2025-08-18 في 23.52.01_43288e11.jpg" alt="Autonomous Robot">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#portfolio"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Eng-Kareem0/Line-Follower-Obstacle-Avoidance-Robot-"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Line-Follower & Obstacle Avoidance Robot</h3>
+                        <p>A self-navigating robot with advanced obstacle detection and path planning capabilities.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Robotics</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="control">
+                    <div class="portfolio-image">
+                        <img src="img/download.jpg " alt="Control System Interface">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#portfolio"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Eng-Kareem0/Smart-Home"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Smart Home</h3>
+                        <p>A Comprehensive control system, security and fire protection with automatic lighting operation.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Control Systems</span>
+                            <span class="tag">PLC</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Sensors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="img/لقطة شاشة 2025-08-19 142457.png" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="https://github.com/Eng-Kareem0/Roma-Cafe"><i class="fas fa-link"></i></a>
+                                <a href="https://eng-kareem0.github.io/Roma-Cafe/"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Roma Cafe Website</h3>
+                        <p>Modern responsive website for a fine dining Cafe with online reservation system.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="img/لقطة شاشة 2025-08-19 143146.png" alt="Restaurant Website">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="https://github.com/Eng-Kareem0/Fat-boy-restaurant"><i class="fas fa-link"></i></a>
+                                <a href="https://eng-kareem0.github.io/Fat-boy-restaurant/"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Website</h3>
+                        <p>Modern responsive website for a fine dining Restaurant with online reservation system.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Web Design</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                 <div class="portfolio-item" data-category="graphic">
+                    <div class="portfolio-image">
+                        <img src="img/1746186861195.jpg" alt="Brand Identity Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="https://github.com/Eng-Kareem0/Nativa"><i class="fas fa-link"></i></a>
+                                <a href="https://eng-kareem0.github.io/Nativa/"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 style="letter-spacing: 1.5px;">Nativa</h3>
+                        <p>Olive oil press brand ( logo design - bottle package - product design ).</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Photoshop</span>
+                            <span class="tag">Web Design</span>
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                 <div class="portfolio-item" data-category="graphic">
+                    <div class="portfolio-image">
+                        <img src="img/رسمه.jpg" alt="Brand Identity Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-links">
+                                <a href="#"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/Eng-Kareem0/Designs"><i class="fas fa-search"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 style="letter-spacing: 1.7px;">Designs</h3>
+                        <p>Some of my own designs.</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">Graphic Design</span>
+                            <span class="tag">Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="section-container">
+            <div class="section-title">
+                <h2 style="color: rgb(175, 4, 87);">My Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robotics Development</h3>
+                    <p>Custom robotics solutions for industrial, commercial, and research applications with focus on autonomy and precision.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Control Systems</h3>
+                    <p>Design and implementation of control systems for automation, process control, and monitoring applications.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Creative graphic design services including branding, web design, print materials, and digital illustrations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Design</h3>
+                    <p>Modern, responsive website design that combines aesthetics with functionality to create exceptional user experiences.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>System Integration</h3>
+                    <p>Integration of hardware and software systems to create cohesive solutions for complex engineering challenges.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Training & Workshops</h3>
+                    <p>Hands-on training and workshops in robotics, control systems, and design for individuals and teams.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-title">
+                <h2 style="color: rgb(175, 4, 87);">Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 style="color: rgb(175, 4, 87);">Let's work together</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!</p>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <p>Egypt , El_Mahalla Elkobra</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <p>+20 01128279142</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p>kareemalgamal3@gmail.com</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16q74g1hwS/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/KEMO_TAREK_10?t=CpZyVnE8SuMz0NxkrZvZGw&s=09"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/kareem-algamal-5315a630b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/Eng-Kareem0"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/kemo_algamal?igsh=YWtvemRubmxybndu"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send a message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Kareem Tarek</div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com/share/16q74g1hwS/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/KEMO_TAREK_10?t=CpZyVnE8SuMz0NxkrZvZGw&s=09"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/kareem-algamal-5315a630b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Eng-Kareem0"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/kemo_algamal?igsh=YWtvemRubmxybndu"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="copyright">
+                &copy; 2025 Kareem Tarek. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+<script src="java.js"></script>
+</body>
+</html>
